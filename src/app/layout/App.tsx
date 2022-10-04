@@ -7,28 +7,8 @@ import ActivityDashboard from '../../features/activities/dashboard/ActivityDashb
 import {v4 as uuid} from 'uuid';
 
 function App() {
-  var myActivities: Activity[] = [
-    {
-      id: 'myId',
-      title: 'title',
-      date: '1/1/2022',
-      description: 'desc',
-      category: 'cat',
-      city: 'giza',
-      venue: 'sheikh zayed'
-    },
-    {
-      id: 'myId1',
-      title: 'title1',
-      date: '1/2/2022',
-      description: 'desc1',
-      category: 'cat1',
-      city: 'giza1',
-      venue: 'sheikh zayed1'
-    }
-];
 
-  const [activities, setActivities] = useState<Activity[]>(myActivities);
+  const [activities, setActivities] = useState<Activity[]>([]);
   const [selectedActivity, setSelectedActivity] = useState<Activity | undefined>(undefined);
   const [editMode, setEditMode] = useState(false);
 
